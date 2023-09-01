@@ -1,0 +1,138 @@
+:root {
+  --box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: none;
+  outline: none;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  background: #f7f7f7;
+  font-family: "Lato", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.container {
+  margin: 30px auto;
+  width: 350px;
+}
+
+h1 {
+  letter-spacing: 1px;
+}
+
+h3 {
+  border-bottom: 1px solid #bbb;
+  padding-bottom: 10px;
+  margin: 40px 0 10px;
+}
+
+h4 {
+  text-transform: uppercase;
+}
+
+.inc-exp-container {
+  background-color: #fff;
+  box-shadow: var(--box-shadow);
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+.inc-exp-container > div {
+  text-align: center;
+  flex: 1;
+}
+.inc-exp-container > div:first-of-type {
+  border-right: 1px solid #dedede;
+}
+
+.money {
+  font-size: 20px;
+  letter-spacing: 1px;
+  margin: 5px 0px;
+}
+
+.plus {
+  color: #2ecc71;
+}
+
+.minus {
+  color: #c0392b;
+}
+
+label {
+  display: inline-block;
+  margin: 10px 0;
+}
+
+input[type=text],
+input[type=number] {
+  border: 1px solid #dedede;
+  border-radius: 2px;
+  display: block;
+  font-size: 16px;
+  padding: 10px;
+  width: 100%;
+}
+
+.list {
+  padding: 0;
+  margin-bottom: 40px;
+}
+.list li {
+  background-color: #fff;
+  box-shadow: var(--box-shadow);
+  color: #333;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  padding: 10px;
+  margin: 10px 0;
+}
+.list li.plus {
+  border-right: 5px solid #2ecc71;
+}
+.list li.minus {
+  border-right: 5px solid #c0392b;
+}
+.list li:hover .delete-btn {
+  display: flex;
+}
+
+.delete-btn {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  background-color: #c0392b;
+  width: 20px;
+  height: 20px;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  transform: translate(-100%, -50%);
+  cursor: pointer;
+}
+
+.btn {
+  background-color: #9c88ff;
+  box-shadow: var(--box-shadow);
+  color: #fff;
+  display: block;
+  font-size: 16px;
+  margin: 10px 0 30px;
+  padding: 10px;
+  width: 100%;
+  border-radius: 2px;
+}/*# sourceMappingURL=style.css.map */
